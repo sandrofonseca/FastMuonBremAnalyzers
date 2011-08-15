@@ -29,7 +29,7 @@ cvs co  FastSimulation/EventProducer
 #cvs co  FastSimulation/TrajectoryManager  
 
 # Event Producer
-cp /UserCode/MuonBremDev/FastSimulation/EventProducer/python/FamosSimHits_cff.py FastSimulation/Calorimetry/python
+cp UserCode/MuonBremDev/FastSimulation/EventProducer/python/FamosSimHits_cff.py FastSimulation/Calorimetry/python
 
 
 # Calorimetry improvements
