@@ -23,9 +23,15 @@ cvs co  Configuration/Generator
 cvs co  FastSimulation/Calorimetry                       
 cvs co  FastSimulation/Configuration                     
 cvs co  FastSimulation/MaterialEffects                   
-cvs co  FastSimulation/MuonSimHitProducer                
-cvs co  FastSimulation/TrajectoryManager  
-#Calorimetry improvements
+cvs co  FastSimulation/MuonSimHitProducer 
+cvs co  FastSimulation/EventProducer
+#cvs co  FastSimulation/TrajectoryManager  
+
+# Event Producer
+cp /UserCode/MuonBremDev/FastSimulation/EventProducer/python/FamosSimHits_cff.py FastSimulation/Calorimetry/python
+
+
+# Calorimetry improvements
 cp UserCode/MuonBremDev/FastSimulation/Calorimetry/src/CalorimetryManager.cc FastSimulation/Calorimetry/src
 cp UserCode/MuonBremDev/FastSimulation/Calorimetry/interface/CalorimetryManager.h FastSimulation/Calorimetry/interface
 
@@ -35,10 +41,12 @@ cp UserCode/MuonBremDev/FastSimulation/MaterialEffects/interface/MaterialEffects
 cp UserCode/MuonBremDev/FastSimulation/MaterialEffects/interface/MuonBremsstrahlungSimulator.h FastSimulation/MaterialEffects/interface
 cp UserCode/MuonBremDev/FastSimulation/MaterialEffects/python/MaterialEffects_cfi.py FastSimulation/MaterialEffects/python
 
-##Muon Chambers improvements
+## Muon Chambers improvements
 cp UserCode/MuonBremDev/FastSimulation/MuonSimHitProducer/src/MuonSimHitProducer.cc FastSimulation/MuonSimHitProducer/src
 cp UserCode/MuonBremDev/FastSimulation/MuonSimHitProducer/interface/MuonSimHitProducer.h FastSimulation/MuonSimHitProducer/interface
 #cp UserCode/MuonSim_June01/FastSimulation/MaterialEffects/python/MaterialEffects_cfi.py FastSimulation/MaterialEffects/python
+
+
 
 #Analysis code for Tracker
 cvs co -r V00-00-04 -d FastMuonBremAnalyzers/FastMuonAnalyzer  UserCode/FastMuonBremAnalyzers/FastMuonAnalyzer
