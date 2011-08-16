@@ -17,7 +17,7 @@ cvs co -r HEAD  UserCode/MuonBremDev/FastSimulation/MuonSimHitProducer/interface
 
 
 # Event producer
-cvs co -r HEAD UserCode/MuonBremDev/FastSimulation/EventProducer/python/FamosSimHits_cff.py
+#cvs co -r HEAD UserCode/MuonBremDev/FastSimulation/EventProducer/python/FamosSimHits_cff.py
 
 pushd $CMSSW_BASE/src
 
@@ -31,7 +31,7 @@ cvs co  FastSimulation/EventProducer
 #cvs co  FastSimulation/TrajectoryManager  
 
 # Event Producer
-cp UserCode/MuonBremDev/FastSimulation/EventProducer/python/FamosSimHits_cff.py FastSimulation/EventProducer/python
+#cp UserCode/MuonBremDev/FastSimulation/EventProducer/python/FamosSimHits_cff.py FastSimulation/EventProducer/python
 
 
 # Calorimetry improvements
